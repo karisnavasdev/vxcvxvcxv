@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>$OSSOFF — Jon Ossoff | Ethereum</title>
+ <meta name="description" content="A community-built memecoin tournament for the 2028 US Presidential Election. One coin per candidate, bonded to $PRESIDENTS. Not affiliated with any candidate or campaign." />
+ <meta property="og:title" content="$OSSOFF — Jon Ossoff" />
+ <meta property="og:description" content="Community memecoin for the 2028 Presidentials tournament on Ethereum. Bonded to $PRESIDENTS." />
+ <meta property="og:image" content="assets/og.jpg" />
+ <meta property="og:type" content="website" />
+ <meta name="twitter:card" content="summary_large_image" />
+ <meta name="twitter:image" content="assets/og.jpg" />
+ <meta name="theme-color" content="#070d1a" />
+ <link rel="icon" href="assets/logo.png" type="image/png" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <a class="skip" href="#top">Skip to content</a>
+ <div class="grain" aria-hidden="true"></div>
+ <div class="flag-bg" aria-hidden="true">
+ <canvas id="flagCanvas"></canvas>
+ <div class="flag-veil"></div>
+ </div>
+ <div class="scroll-meter" aria-hidden="true">
+ <div class="scroll-meter__bar"><div class="scroll-meter__fill" id="scrollFill"></div></div>
+ <span class="scroll-meter__label" id="scrollLabel">0%</span>
+ </div>
+
+ <header class="nav" id="nav">
+ <a class="nav__brand" href="#top">
+ <img class="nav__logo" src="assets/logo.png" alt="" width="40" height="40" />
+ <span>$OSSOFF</span>
+ </a>
+ <nav class="nav__links" id="navLinks">
+ <a href="#lore">Lore</a>
+ <a href="#memes">Archive</a>
+ <a href="#buy">How to buy</a>
+ <a href="#tokenomics">Tokenomics</a>
+ <a href="#faq">FAQ</a>
+ </nav>
+ <div class="nav__cta">
+ <button type="button" class="btn btn--ghost btn--sm magnetic" data-copy>Copy CA</button>
+ <button type="button" class="btn btn--hot btn--sm magnetic" id="navBuy" disabled>Buy · Soon</button>
+ <button type="button" class="nav__toggle" id="burger" aria-label="Menu">
+ <span></span><span></span>
+ </button>
+ </div>
+ </header>
+
+ <div class="drawer" id="drawer">
+ <a href="#lore">Lore</a>
+ <a href="#memes">Archive</a>
+ <a href="#buy">How to buy</a>
+ <a href="#tokenomics">Tokenomics</a>
+ <a href="#faq">FAQ</a>
+ <a href="#socials">Socials</a>
+ </div>
+
+ <main id="top">
+ <section class="hero">
+ <div class="hero__inner">
+ <div class="hero__copy">
+ <p class="eyebrow reveal"><span class="live-dot"></span> Presidentials 2028 · Ethereum</p>
+ <h1 class="hero__title reveal">
+ <span class="hero__name">Jon Ossoff</span>
+ <span class="hero__ticker">$OSSOFF</span>
+ </h1>
+ <p class="hero__sub reveal" id="heroDesc"></p>
+ <div class="ca reveal" data-ca>
+ <span class="ca__label">CA</span>
+ <code class="ca__value" id="caText">0xcomingsoon</code>
+ <button type="button" class="ca__copy" data-copy aria-label="Copy contract">
+ <span class="ico-copy">Copy</span>
+ <span class="ico-ok">Copied</span>
+ </button>
+ </div>
+ <div class="hero__btns reveal">
+ <button type="button" class="btn btn--hot btn--lg magnetic" id="heroBuy" disabled>Buy on ETH · Soon</button>
+ <a class="btn btn--ghost btn--lg magnetic is-disabled" id="heroChart" href="#" aria-disabled="true">Chart · Soon</a>
+ <a class="btn btn--ghost btn--lg magnetic is-disabled" id="heroX" href="#" aria-disabled="true">Follow X</a>
+ </div>
+ <ul class="hero__stats reveal">
+ <li><b>ETH</b><span>Network</span></li>
+ <li><b>$PRES</b><span>Hub bond</span></li>
+ <li><b>DEM</b><span>Desk</span></li>
+ <li><b>SOON</b><span>CA status</span></li>
+ </ul>
+ </div>
+ <div class="hero__art reveal">
+ <div class="hero__frame" id="heroParallax">
+ <img src="assets/hero.jpg" alt="Jon Ossoff $OSSOFF hero" />
+ <div class="hero__badge">
+ <img src="assets/logo.png" alt="" />
+ <div>
+ <strong>Jon Ossoff</strong>
+ <span>$OSSOFF · community desk</span>
+ </div>
+ </div>
+ <div class="orbit" aria-hidden="true">
+ <svg viewBox="0 0 100 100">
+ <defs>
+ <path id="orbitPath" d="M50,50 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0" />
+ </defs>
+ <text class="orbit__text"><textPath href="#orbitPath">$OSSOFF · ETHEREUM · $PRESIDENTS · 2028 · FREEDOM · </textPath></text>
+ </svg>
+ </div>
+ </div>
+ </div>
+ </div>
+ <a class="hero__scroll" href="#lore">Scroll<span></span></a>
+ </section>
+
+ <div class="tape" aria-hidden="true">
+ <div class="tape__track">
+ <span>$OSSOFF · JON OSSOFF · ETHEREUM · $PRESIDENTS TOURNAMENT · 2028 · NOT AFFILIATED · GEORGIA'S QUIET BET · MEME DESK · EAGLES UP · </span>
+ <span>$OSSOFF · JON OSSOFF · ETHEREUM · $PRESIDENTS TOURNAMENT · 2028 · NOT AFFILIATED · GEORGIA'S QUIET BET · MEME DESK · EAGLES UP · </span>
+ </div>
+ </div>
+
+ <section class="chamber" id="lore">
+ <div class="chamber__head reveal">
+ <p class="eyebrow">The lore</p>
+ <h2>One coin. One ballot desk.<br /><em>Bonded to $PRESIDENTS.</em></h2>
+ </div>
+ <div class="lore-grid">
+ <article class="glass reveal">
+ <img src="assets/vault.jpg" alt="Jon Ossoff vault art" />
+ <div>
+ <h3>Meet the desk</h3>
+ <p id="ballotDesc"></p>
+ <p class="tagline" id="tagline"></p>
+ <ul class="checks">
+ <li>One coin per candidate</li>
+ <li>Bonded to the $PRESIDENTS hub</li>
+ <li>Ethereum mainnet</li>
+ <li>Community-built · not official</li>
+ </ul>
+ <p class="fee" id="feeNote"></p>
+ </div>
+ </article>
+ <div class="feature-cards">
+ <article class="feature reveal">
+ <span>01</span>
+ <h3>Tournament native</h3>
+ <p>Part of the 2028 Presidentials meme tournament — one ticker per candidate, one hub bonding them all.</p>
+ </article>
+ <article class="feature reveal">
+ <span>02</span>
+ <h3>Ethereum first</h3>
+ <p>Lives on Ethereum. No mystery chain. CA stays locked until the real contract is live.</p>
+ </article>
+ <article class="feature reveal">
+ <span>03</span>
+ <h3>Community desk</h3>
+ <p>Not a campaign. Not endorsed. Just degens building lore, memes, and a sticky ticker.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="chamber" id="memes">
+ <div class="chamber__head reveal">
+ <p class="eyebrow">The archive</p>
+ <h2>Meme wall</h2>
+ <p class="lede">Patriotic drops for the $OSSOFF desk — tap any frame.</p>
+ </div>
+ <div class="gallery" id="memeWall">
+ <figure class="gal reveal" data-title="Patriotic portrait"><img src="assets/memes/patriotic-portrait.jpg" alt="Patriotic portrait" loading="lazy" /><figcaption>Patriotic portrait</figcaption></figure>
+ <figure class="gal gal--tall reveal" data-title="Cowboy"><img src="assets/memes/cowboy.jpg" alt="Cowboy" loading="lazy" /><figcaption>Cowboy</figcaption></figure>
+ <figure class="gal reveal" data-title="Eagle companion"><img src="assets/memes/eagle-companion.jpg" alt="Eagle companion" loading="lazy" /><figcaption>Eagle companion</figcaption></figure>
+ <figure class="gal reveal" data-title="Statue of Liberty"><img src="assets/memes/statue-liberty.jpg" alt="Statue Liberty" loading="lazy" /><figcaption>Statue Liberty</figcaption></figure>
+ <figure class="gal gal--wide reveal" data-title="Rocket launch"><img src="assets/memes/rocket-launch.jpg" alt="Rocket launch" loading="lazy" /><figcaption>Rocket launch</figcaption></figure>
+ <figure class="gal reveal" data-title="Uncle Sam"><img src="assets/memes/uncle-sam.jpg" alt="Uncle Sam" loading="lazy" /><figcaption>Uncle Sam</figcaption></figure>
+ <figure class="gal gal--wide reveal" data-title="Flag storm"><img src="assets/memes/flag-storm.jpg" alt="Flag storm" loading="lazy" /><figcaption>Flag storm</figcaption></figure>
+ <figure class="gal reveal" data-title="Rodeo hero"><img src="assets/memes/rodeo-hero.jpg" alt="Rodeo hero" loading="lazy" /><figcaption>Rodeo hero</figcaption></figure>
+ <figure class="gal reveal" data-title="Freedom fighter"><img src="assets/memes/freedom-fighter.jpg" alt="Freedom fighter" loading="lazy" /><figcaption>Freedom fighter</figcaption></figure>
+ <figure class="gal gal--wide reveal" data-title="Crypto president"><img src="assets/memes/crypto-president.jpg" alt="Crypto president" loading="lazy" /><figcaption>Crypto president</figcaption></figure>
+ </div>
+ </section>
+
+ <section class="chamber chamber--ca" id="ca">
+ <div class="ca-panel reveal">
+ <div>
+ <p class="eyebrow">Contract</p>
+ <h2>Official CA</h2>
+ <p>Placeholder until launch. Only trust updates from this site.</p>
+ </div>
+ <div class="ca ca--xl">
+ <span class="ca__label">ETH</span>
+ <code class="ca__value" id="caText2">0xcomingsoon</code>
+ <button type="button" class="btn btn--hot magnetic" data-copy>Copy</button>
+ </div>
+ </div>
+ </section>
+
+ <section class="chamber" id="buy">
+ <div class="chamber__head reveal">
+ <p class="eyebrow">How to join</p>
+ <h2>Four steps to $OSSOFF</h2>
+ </div>
+ <div class="steps" id="steps"></div>
+ <div class="soon-card reveal">
+ <img src="assets/banner.jpg" alt="" />
+ <div>
+ <h3>Buy & chart unlock with live CA</h3>
+ <p>Dex links stay hidden until a real Ethereum contract is published. No fake charts. No invented addresses.</p>
+ <button type="button" class="btn btn--ghost" disabled>Coming Soon</button>
+ </div>
+ </div>
+ </section>
+
+ <section class="chamber" id="tokenomics">
+ <div class="chamber__head reveal">
+ <p class="eyebrow">Economics</p>
+ <h2>Tokenomics</h2>
+ </div>
+ <div class="tok" id="tokGrid"></div>
+ <div class="poster reveal">
+ <img src="assets/banner-1500x500.jpg" alt="OSSOFF banner" />
+ </div>
+ </section>
+
+ <section class="chamber" id="faq">
+ <div class="chamber__head reveal">
+ <p class="eyebrow">Questions</p>
+ <h2>FAQ</h2>
+ </div>
+ <div class="faq" id="faqList">
+ <details class="faq__item reveal" open>
+ <summary>What is $OSSOFF?</summary>
+ <p>A community-built memecoin for the 2028 US Presidential Election tournament narrative. One coin per candidate, all bonded to the $PRESIDENTS hub.</p>
+ </details>
+ <details class="faq__item reveal">
